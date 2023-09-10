@@ -1,0 +1,158 @@
+.ls-10{
+  letter-spacing: 10px;
+}
+.ls-20{
+  letter-spacing: 20px;
+}
+.ls-48{
+  letter-spacing: 48px;
+}
+.ls-96{
+  letter-spacing: 96px;
+}
+.object-fit{
+  object-fit: cover;
+}
+.fs-ai{
+  font-size:400px;
+  @media screen and (max-width:768px) {
+    font-size: 128px;
+  }
+}
+
+header{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel_bg{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: rgba(0,0,0,1);
+  .square1{
+  height: 40px;
+  background: linear-gradient(to right, $primary,#11002d);
+  }
+  .square2{
+    height: 40px;
+    background: linear-gradient(to left, $primary,#11002d);
+  }
+  .carousel-img{
+    background-image: url('/assets/images/carousel.png');
+    background-size: cover;
+    background-position: center center;
+    width: 75%;
+  }
+  @media screen and (max-width:768px){
+    .carousel-img{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:576px){
+    .ls-20{
+      letter-spacing: 10px;
+    }
+  }
+}
+.news{
+  background-image: radial-gradient(50% 50% at 50% 50%, #28085C
+  0%, $dark 100%);
+  @media screen and (min-width:992px){
+    .new-border{
+      border-right: solid 1px #FFF;
+    }
+  }
+  .new-img{
+   padding-top: 130px;
+   padding-bottom: 150px; 
+  }
+}
+
+.share {
+  background-image: radial-gradient(50% 50% at 50% 50%, $dark 0%, #28085C 100%);
+  .share-bg{
+    font-size: 400px;
+    opacity: 0.1;
+    z-index: 0;
+  }
+  .share-swiper {
+    .swiper-wrapper {
+      margin-bottom: 0;
+      height: 416px;
+    }
+  }
+  .swiper-scrollbar {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .swiper-scrollbar-drag {
+    background: #ffffff !important;
+  }
+  .share-scroll {
+    margin-bottom: 124px;
+  }
+}
+.share {
+  &-card {
+    padding: 40px;
+    background-color: #380c7e;
+    color: #ffffff;
+    min-height: 351px;
+    position: relative;
+    z-index: 1;
+  }
+}
+.line{
+  width: 124px;
+  height: 8px;
+  border-radius: 10px;
+}
+.mail-btn{
+  width: 57%;
+  @media screen and (max-width:992px) {
+    width: 100%;
+  }
+}
+.aiintro01{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_vertical.png?raw=true');
+}
+.aiintro02{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true');
+}
+.aiintro03{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_verticalgle.png?raw=true');
+}
+.aiintro04{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_vertical.png?raw=true');
+}
+.aiintro{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center center;
+  transition:all 0.5s;
+  cursor: pointer;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 1;
+    transition: opacity 0.5s; 
+    pointer-events: none;
+  }
+  &:hover:before {
+    opacity: 0; 
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  p ,h2 ,img{
+    z-index: 1;
+  }
+}
+
